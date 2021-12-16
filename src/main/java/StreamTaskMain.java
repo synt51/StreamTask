@@ -28,10 +28,9 @@ public class StreamTaskMain {
         System.out.println("Product is: " + streamProd);
 
 
-        String fileName = "/Users/heinzschlomer/Downloads/students.csv";
-        List<Student> students = new ArrayList<>(); //"/Users/heinzschlomer/Downloads/students.csv"
+        List<Student> students = new ArrayList<>();
 
-        try (Stream<String> stream = Files.lines(Path.of("/Users/heinzschlomer/Downloads/students.csv"))) {
+        try (Stream<String> stream = Files.lines(Path.of("src/main/students.csv"))) {
 
 
             students = stream.skip(1)                     // delete the headline
