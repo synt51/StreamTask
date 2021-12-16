@@ -2,10 +2,10 @@ public class Student {
 
     private int id;
     private String name;
-    private String postalCode;
+    private int postalCode;
     private int age;
 
-    public Student (int id, String name, String postalCode, int age){
+    public Student (int id, String name, int postalCode, int age){
         this.id = id;
         this. name = name;
         this.postalCode = postalCode;
@@ -28,11 +28,11 @@ public class Student {
         this.name = name;
     }
 
-    public String getPostalCode() {
+    public int getPostalCode() {
         return postalCode;
     }
 
-    public void setPostalCode(String postalCode) {
+    public void setPostalCode(int postalCode) {
         this.postalCode = postalCode;
     }
 

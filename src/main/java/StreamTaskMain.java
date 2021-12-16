@@ -38,7 +38,7 @@ public class StreamTaskMain {
                     .filter(line -> !line.isEmpty())      // filter invalid lines (blanks)
                     .distinct()                           // delete duplicates
                     .map(line -> line.split(","))   // convert each line to Student class
-                    .map(values -> new Student(Integer.parseInt(values[0]),values[1],values[2],Integer.parseInt(values[3])))
+                    .map(values -> new Student(Integer.parseInt(values[0]),values[1],Integer.parseInt(values[2]),Integer.parseInt(values[3])))
                     .collect(Collectors.toList());
 
         } catch (IOException e) {
